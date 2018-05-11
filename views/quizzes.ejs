@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>lista de quiezzes</h1>
+<% for(var i=0; i< quizzes.length; i++) { %>
+<p><%= quizzes[i].question + ': ' + quizzes[i].answer %></p>
+<% } %>
+</body>
+</html>
